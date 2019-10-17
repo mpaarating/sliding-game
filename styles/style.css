@@ -1,0 +1,71 @@
+html {
+  background-color: rgb(182, 221, 197);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  max-width: 600px;
+}
+
+.game-controls {
+  display: none;
+  justify-content: space-around;
+}
+
+button {
+  font-size: 100%;
+  padding: 0.5em 1em;
+  color: white; /* rgba supported */
+  border: 1px solid #999; /*IE 6/7/8*/
+  border: none rgba(0, 0, 0, 0); /*IE9 + everything else*/
+  text-decoration: none;
+  border-radius: 2px;
+  background-color: rgb(39, 76, 119);
+}
+
+button:hover {
+  background-color: rgb(96, 150, 186);
+  color: black;
+}
+
+.submit-control button {
+  background-color: rgb(39, 76, 119);
+}
+
+.reset-control button {
+  background-color: rgb(139, 140, 137);
+}
+
+.reset-control button:hover {
+  background-color: rgb(96, 150, 186);
+}
+
+form.game-setup > .game-rows,
+.game-columns {
+  display: flex;
+}
+
+.game-columns label,
+.game-rows label {
+  width: 40%;
+}
+
+.game-columns input[type='number'],
+.game-rows input[type='number'] {
+  width: 20px;
+}
+
+.setup-submission {
+  margin-top: 10px;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SLIDING GAME</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="app">
+        <h1>SLIDING GAME</h1>
+        <div class="game-area"></div>
+        <div class="game-setup-controls">
+          <form onsubmit="return false" class="game-setup">
+            <h2>Customize Your Game To Begin</h2>
+            <div class="game-rows">
+              <label for="game-rows">Enter Rows:</label>
+              <input
+                type="number"
+                name="game-rows"
+                id="game-rows"
+                min="2"
+                max="5"
+              />
+            </div>
+            <div class="game-columns">
+              <label for="game-columns">Enter Columns:</label>
+              <input
+                type="number"
+                name="game-columns"
+                id="game-columns"
+                min="2"
+                max="5"
+              />
+            </div>
+            <div class="setup-submission">
+              <button type="submit">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+        <div class="game-controls">
+          <div class="submit-control">
+            <button type="submit">SUBMIT</button>
+          </div>
+          <div class="reset-control">
+            <button type="reset">RESET</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="scripts/app.js"></script>
+</html>
