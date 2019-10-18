@@ -5,17 +5,63 @@ html {
 
 main {
   display: flex;
+  justify-content: center;
+}
+
+main h1 {
+  text-align: center;
+}
+
+.app {
+  max-width: 700px;
+}
+
+.game-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game-controls {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.holder {
+  height: 110px;
+  width: 110px;
+  margin: 10px;
+  border: solid 5px black;
+  background-color: white;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.app {
-  max-width: 600px;
+.held {
+  border: solid 10px black;
+  background-color: black;
 }
 
-.game-controls {
+.hovered {
+  border: dotted 5px black;
+}
+
+.invisible {
   display: none;
-  justify-content: space-around;
+}
+
+.slider {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 button {

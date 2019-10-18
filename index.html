@@ -11,9 +11,9 @@
     <main>
       <div class="app">
         <h1>SLIDING GAME</h1>
-        <div class="game-area"></div>
-        <div class="game-setup-controls">
-          <form onsubmit="return false" class="game-setup">
+        <div class="game-area" id="game-area"></div>
+        <div class="game-setup-controls" id="game-setup-controls">
+          <form onsubmit="return false" class="game-setup" id="game-setup-form">
             <h2>Customize Your Game To Begin</h2>
             <div class="game-rows">
               <label for="game-rows">Enter Rows:</label>
@@ -40,12 +40,14 @@
             </div>
           </form>
         </div>
-        <div class="game-controls">
+        <div class="game-controls invisible" id="game-controls">
           <div class="submit-control">
+            <p>Think you won?</p>
             <button type="submit">SUBMIT</button>
           </div>
           <div class="reset-control">
-            <button type="reset">RESET</button>
+            <p>Care to start over?</p>
+            <button type="reset" onclick="resetGame()">RESET</button>
           </div>
         </div>
       </div>
